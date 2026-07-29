@@ -1,0 +1,38 @@
+# Gabarito das variantes do personal (Preline UI). Mesma convencao do dashboard:
+# on_axis = categoria(s) que DEVEM virar mismatch; `missing` nao e categoria de
+# mismatch; dai on_axis=[] no component_gross.
+
+[v0]
+on_axis = []
+expected_status = "matched"
+affected = "nenhum (par publicado; ver README sobre divergencias reais)"
+
+[color_gross]
+on_axis = ["color"]
+expected_status = "mismatch"
+affected = "Subtitulo do perfil (token text-muted-foreground-2 -> magenta #d81b8c hardcoded)"
+
+[layout_gross]
+on_axis = ["layout"]
+expected_status = "mismatch"
+affected = "Grid de depoimentos (2 colunas -> pilha vertical)"
+
+[alignment_gross]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "Container principal (mx-auto removido -> conteudo cola a esquerda)"
+
+[component_gross]
+on_axis = []
+expected_status = "missing"
+affected = "Lista de contatos do About (email + 2 handles) removida por completo"
+
+[image_gross]
+on_axis = ["image"]
+expected_status = "mismatch"
+affected = "Avatar do perfil (size-16 quadrado -> h-16 w-32 esticado)"
+
+[text_gross]
+on_axis = ["text"]
+expected_status = "mismatch"
+affected = "Nome do perfil 'Eliana Garcia' (text-lg -> text-4xl)"

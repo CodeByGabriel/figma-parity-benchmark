@@ -1,0 +1,68 @@
+# Gabarito das variantes do ai_chat (Preline UI). Mesma convencao do dashboard:
+# on_axis = categoria(s) que DEVEM virar mismatch; `missing` nao e categoria de
+# mismatch; dai on_axis=[] no component_gross.
+
+[v0]
+on_axis = []
+expected_status = "matched"
+affected = "nenhum (par publicado; ver README sobre divergencias reais)"
+
+[color_gross]
+on_axis = ["color"]
+expected_status = "mismatch"
+affected = "Botao de enviar (token bg-primary -> magenta #d81b8c hardcoded)"
+
+[color_subtle]
+on_axis = ["color"]
+expected_status = "mismatch"
+affected = "Botao de enviar (token -> #1d4ed8, azul quase igual)"
+
+[layout_gross]
+on_axis = ["layout"]
+expected_status = "mismatch"
+affected = "Chips de categoria (linha horizontal -> pilha vertical)"
+
+[alignment_gross]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "Container principal (mx-auto removido -> conteudo cola a esquerda)"
+
+[alignment_subtle]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "Titulo principal (text-center -> text-left)"
+
+[layout_subtle]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "Chips de categoria (espacamento sm:gap-2 -> sm:gap-6)"
+
+[component_gross]
+on_axis = []
+expected_status = "missing"
+affected = "Grupo de chips de categoria (6 itens) removido por completo"
+
+[component_subtle]
+on_axis = ["component"]
+expected_status = "mismatch"
+affected = "Um chip removido ('Language'), restam 5 dos 6"
+
+[image_gross]
+on_axis = ["image"]
+expected_status = "mismatch"
+affected = "Avatar do header (size-8 quadrado -> h-8 w-16 esticado)"
+
+[image_subtle]
+on_axis = ["image"]
+expected_status = "mismatch"
+affected = "Avatar do header (size-8 -> h-8 w-9, leve esticada)"
+
+[text_gross]
+on_axis = ["text"]
+expected_status = "mismatch"
+affected = "Titulo 'What can I help with?' (text-3xl -> text-5xl)"
+
+[text_subtle]
+on_axis = ["text"]
+expected_status = "mismatch"
+affected = "Titulo principal (text-3xl -> text-2xl)"

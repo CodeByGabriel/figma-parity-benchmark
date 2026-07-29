@@ -1,0 +1,15 @@
+id              = "component_gross"
+category        = "component"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"          # gross | subtle
+expected_status = "missing"
+injected_by     = "manual"
+description     = "grupo inteiro de contatos removido do DOM"
+# Nota: modulo inteiro removido -> status esperado 'missing'; no gabarito
+# on_axis=[] porque 'missing' nao e categoria de mismatch.
+
+# medido por diff contra o v0 (mesma formatacao): 33 linha(s) alterada(s), 1 arquivo.
+# o defeito e a unica diferenca funcional contra reference/index.offline.html;
+# o prefixo dos caminhos de assets difere pela posicao na arvore do repositorio.
+files_changed = [
+    "index.html",
+]

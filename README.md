@@ -82,11 +82,11 @@ fiel, o projeto não serve para avaliar técnica nenhuma.
 | Projeto | Figma | Reference | Fiel ao design? | Variantes | Status |
 |---|---|---|---|---|---|
 | `dashboard` | sim | sim | sim | 12 | incluído |
-| `ai_chat` (Preline) | sim | sim | sim | 12 | a portar (validação em grupo pendente) |
-| `cms` (Preline) | sim | sim | sim | 6 | a portar (validação em grupo pendente) |
-| `agency` (Preline) | sim | sim | sim | 6 | a portar (validação em grupo pendente) |
-| `personal` (Preline) | sim | sim | sim | 6 | a portar (validação em grupo pendente) |
-| `coffee` (Preline) | sim | sim | não (código renderiza 6584px; frame do design tem 4044px) | 6 | em curadoria (revisão do código) |
+| `ai_chat` (Preline) | sim | sim | sim | 12 | incluído (validação em grupo pendente) |
+| `cms` (Preline) | sim | sim | sim | 6 | incluído (validação em grupo pendente) |
+| `agency` (Preline) | sim | sim | sim | 6 | incluído (validação em grupo pendente) |
+| `personal` (Preline) | sim | sim | sim | 6 | incluído (validação em grupo pendente) |
+| `coffee` (Preline) | sim | sim | parcial (o hero usa 80dvh e estica com o viewport da captura; a diferença de altura vem quase toda disso) | 6 | em curadoria (decisão em grupo) |
 | dark dos 5 Preline + 3 telas extras do shadcn | sim | não | | | fora por enquanto (sem código de referência) |
 
 ## O que este repositório NÃO contém

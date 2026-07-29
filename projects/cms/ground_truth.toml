@@ -1,0 +1,38 @@
+# Gabarito das variantes do cms (Preline UI). Mesma convencao do dashboard:
+# on_axis = categoria(s) que DEVEM virar mismatch; `missing` nao e categoria de
+# mismatch; dai on_axis=[] no component_gross.
+
+[v0]
+on_axis = []
+expected_status = "matched"
+affected = "nenhum (par publicado; ver README sobre divergencias reais)"
+
+[color_gross]
+on_axis = ["color"]
+expected_status = "mismatch"
+affected = "Logo do navbar (token bg-primary -> magenta #d81b8c hardcoded)"
+
+[layout_gross]
+on_axis = ["layout"]
+expected_status = "mismatch"
+affected = "Conteudo (duas colunas lg:flex-row -> pilha vertical)"
+
+[alignment_gross]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "Perfil 'Top authors' (items-center -> items-start no container)"
+
+[component_gross]
+on_axis = []
+expected_status = "missing"
+affected = "Cartao do grafico (select + stats Free/Paid + chart) removido"
+
+[image_gross]
+on_axis = ["image"]
+expected_status = "mismatch"
+affected = "Avatar do autor (size-14 quadrado -> h-14 w-28 esticado)"
+
+[text_gross]
+on_axis = ["text"]
+expected_status = "mismatch"
+affected = "Titulo 'Dashboard' (text-lg -> text-5xl)"
