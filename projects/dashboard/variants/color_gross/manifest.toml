@@ -1,0 +1,11 @@
+id              = "color_gross"
+category        = "color"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "SiteHeader / botao Quick Create: token semantico -> magenta hardcoded (bg-[#C74AE2])."
+
+# medido por diff contra reference/ :
+files_changed = [
+    "site-header.tsx",   # modificado
+]

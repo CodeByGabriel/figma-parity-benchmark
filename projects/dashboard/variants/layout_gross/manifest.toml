@@ -1,0 +1,11 @@
+id              = "layout_gross"
+category        = "layout"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "KPI Cards: grade de 4 colunas -> 2x2 (reestruturacao)."
+
+# medido por diff contra reference/ :
+files_changed = [
+    "section-cards.tsx",   # modificado
+]

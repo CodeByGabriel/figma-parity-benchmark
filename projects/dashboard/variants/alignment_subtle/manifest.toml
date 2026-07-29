@@ -1,0 +1,11 @@
+id              = "alignment_subtle"
+category        = "alignment"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "subtle"
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "KPI Card Total Revenue: conteudo centralizado (era alinhado a esquerda)."
+
+# medido por diff contra reference/ :
+files_changed = [
+    "section-cards.tsx",   # modificado
+]

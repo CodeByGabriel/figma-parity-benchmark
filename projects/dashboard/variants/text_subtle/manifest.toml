@@ -1,0 +1,11 @@
+id              = "text_subtle"
+category        = "text"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "subtle"
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "CardTitle Total Visitors: peso/tamanho da fonte alterados."
+
+# medido por diff contra reference/ :
+files_changed = [
+    "chart-area-interactive.tsx",   # modificado
+]

@@ -1,0 +1,11 @@
+id              = "alignment_gross"
+category        = "alignment"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "Secao ChartAreaInteractive: offset lateral ml-20."
+
+# medido por diff contra reference/ :
+files_changed = [
+    "page.tsx",   # modificado
+]

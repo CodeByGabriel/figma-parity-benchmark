@@ -1,0 +1,12 @@
+id              = "component_gross"
+category        = "component"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"
+expected_status = "missing"
+injected_by     = "manual"
+description     = "Secao Chart inteira removida."
+# Nota: modulo inteiro removido -> status esperado 'missing'; no gabarito on_axis=[] porque 'missing' nao e categoria de mismatch.
+
+# medido por diff contra reference/ :
+files_changed = [
+    "page.tsx",   # modificado
+]

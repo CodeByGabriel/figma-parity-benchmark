@@ -1,0 +1,7 @@
+{
+  "variant_id": "v0",
+  "description": "baseline (no perturbation)",
+  "drift_type": null,
+  "drift_category_visrefiner": null,
+  "expected_drifts": []
+}

@@ -1,0 +1,11 @@
+id              = "image_gross"
+category        = "image"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "NavUser / avatar: AvatarImage removida, resta fallback textual."
+
+# medido por diff contra reference/ :
+files_changed = [
+    "nav-user.tsx",   # modificado
+]

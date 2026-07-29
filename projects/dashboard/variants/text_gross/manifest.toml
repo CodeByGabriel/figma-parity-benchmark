@@ -1,0 +1,11 @@
+id              = "text_gross"
+category        = "text"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "KPI Card Total Revenue: label truncado + titulo degradado."
+
+# medido por diff contra reference/ :
+files_changed = [
+    "section-cards.tsx",   # modificado
+]

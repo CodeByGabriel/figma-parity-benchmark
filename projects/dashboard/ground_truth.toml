@@ -1,0 +1,73 @@
+# Ground truth = mutações controladas (decisão travada com o usuário).
+# Encodado a partir de notes/research/semana_07_20260525_a_20260531/variant_design.md §2.2.
+# Cada variante injeta drift em EXATAMENTE 1 categoria; `on_axis` = categoria(s) que
+# DEVEM virar `mismatch`. v0 (baseline) tem on_axis=[] → piso de falso-positivo.
+# `expected_status` documenta o status esperado do grupo afetado (recall/precisão medem
+# categorias de mismatch; `missing` não é categoria de mismatch; daí on_axis=[]).
+
+[v0]
+on_axis = []
+expected_status = "matched"
+affected = "nenhum (Chart/Table = expected_drift, data-driven)"
+
+[color_subtle]
+on_axis = ["color"]
+expected_status = "mismatch"
+affected = "KPI Cards (gradiente de fundo)"
+
+[color_gross]
+on_axis = ["color"]
+expected_status = "mismatch"
+affected = "SiteHeader / botão Quick Create (token → magenta hardcoded)"
+
+# gap change = espaçamento sem reestruturação ⇒ categoria alignment (variant_design.md §2.2 nota *)
+[layout_subtle]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "KPI Cards (espaçamento da grade, gap-4→gap-8)"
+
+[layout_gross]
+on_axis = ["layout"]
+expected_status = "mismatch"
+affected = "KPI Cards (grade 4-col → 2x2)"
+
+[alignment_subtle]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "KPI Card Total Revenue (conteúdo centralizado)"
+
+[alignment_gross]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "Seção ChartAreaInteractive (offset ml-20)"
+
+[component_subtle]
+on_axis = ["component"]
+expected_status = "mismatch"
+affected = "KPI Card Growth Rate (badge de tendência removido)"
+
+# component_gross remove o módulo inteiro do gráfico ⇒ status esperado = missing (não mismatch)
+[component_gross]
+on_axis = []
+expected_status = "missing"
+affected = "Seção Chart inteira (removida)"
+
+[image_subtle]
+on_axis = ["image"]
+expected_status = "mismatch"
+affected = "NavUser / avatar (esticado h-8 w-12)"
+
+[image_gross]
+on_axis = ["image"]
+expected_status = "mismatch"
+affected = "NavUser / avatar (AvatarImage removida, fallback textual)"
+
+[text_subtle]
+on_axis = ["text"]
+expected_status = "mismatch"
+affected = "CardTitle Total Visitors (peso/tamanho)"
+
+[text_gross]
+on_axis = ["text"]
+expected_status = "mismatch"
+affected = "KPI Card Total Revenue (label truncado + título degradado)"
