@@ -1,0 +1,38 @@
+# Gabarito das variantes do coffee_shop (Preline UI). Mesma convencao do dashboard:
+# on_axis = categoria(s) que DEVEM virar mismatch; `missing` nao e categoria de
+# mismatch; dai on_axis=[] no component_gross.
+
+[v0]
+on_axis = []
+expected_status = "matched"
+affected = "nenhum (par publicado; ver README sobre divergencias reais)"
+
+[color_gross]
+on_axis = ["color"]
+expected_status = "mismatch"
+affected = "Botao 'Sign in' (token bg-primary -> magenta #d81b8c hardcoded)"
+
+[layout_gross]
+on_axis = ["layout"]
+expected_status = "mismatch"
+affected = "Grade de cards de produto (3 colunas -> coluna unica empilhada)"
+
+[alignment_gross]
+on_axis = ["alignment"]
+expected_status = "mismatch"
+affected = "Header 'New this season' (mx-auto removido, bloco cola a esquerda)"
+
+[component_gross]
+on_axis = []
+expected_status = "missing"
+affected = "Announcement Banner ('Free delivery on orders over $50') removido"
+
+[image_gross]
+on_axis = ["image"]
+expected_status = "mismatch"
+affected = "Imagem do 1o card (size-full -> h-8 w-16, aspect ratio quebrado)"
+
+[text_gross]
+on_axis = ["text"]
+expected_status = "mismatch"
+affected = "Titulo do hero 'Bringing Art to everything' (lg:text-5xl -> lg:text-8xl)"

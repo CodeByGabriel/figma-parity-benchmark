@@ -1,0 +1,13 @@
+id              = "text_gross"
+category        = "text"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"          # gross | subtle
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "tamanho de fonte do titulo do hero aumentado"
+
+# medido por diff contra o v0 (mesma formatacao): 2 linha(s) alterada(s), 1 arquivo.
+# o defeito e a unica diferenca funcional contra reference/index.offline.html;
+# o prefixo dos caminhos de assets difere pela posicao na arvore do repositorio.
+files_changed = [
+    "index.html",
+]

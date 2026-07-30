@@ -1,0 +1,13 @@
+id              = "image_gross"
+category        = "image"          # 1 das 6: color | layout | alignment | component | image | text
+severity        = "gross"          # gross | subtle
+expected_status = "mismatch"
+injected_by     = "manual"
+description     = "aspect ratio da imagem do 1o card quebrado (64x32 num box 373x373)"
+
+# medido por diff contra o v0 (mesma formatacao): 2 linha(s) alterada(s), 1 arquivo.
+# o defeito e a unica diferenca funcional contra reference/index.offline.html;
+# o prefixo dos caminhos de assets difere pela posicao na arvore do repositorio.
+files_changed = [
+    "index.html",
+]

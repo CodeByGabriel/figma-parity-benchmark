@@ -86,16 +86,17 @@ fiel, o projeto não serve para avaliar técnica nenhuma.
 | `cms` (Preline) | sim | sim | sim | 6 | incluído (validação em grupo pendente) |
 | `agency` (Preline) | sim | sim | sim | 6 | incluído (validação em grupo pendente) |
 | `personal` (Preline) | sim | sim | sim | 6 | incluído (validação em grupo pendente) |
-| `coffee` (Preline) | sim | sim | parcial (hero: 528px fixos no Figma, `80dvh` no código; divergência do par publicado, não do nosso export) | 6 | em curadoria (decisão em grupo) |
+| `coffee_shop` (Preline) | sim | sim | parcial (hero: 528px fixos no Figma, `80dvh` no código; divergência do par publicado, não do nosso export) | 6 | incluído, com ressalva do hero (ver README do projeto) |
 | dark dos 5 Preline + 3 telas extras do shadcn | sim | não | | | fora por enquanto (sem código de referência) |
 
-Sobre o `coffee`, verificado em 30/07: a cópia local é idêntica ao
+Sobre o `coffee_shop`, verificado em 30/07: a cópia local é idêntica ao
 `templates/coffee-shop` no main do repositório oficial do Preline, e não há issue
 aberta sobre o tema. A divergência nasce no próprio par publicado (o Figma desenha
 o hero com altura fixa; o código o faz relativo à janela, `80dvh`), e foi
 amplificada pelo viewport de captura usado na renderização. Com viewport
 convencional (1728x1080), a página fica ~5,7% mais alta que o design, quase tudo
-no hero.
+no hero. Renderizações para comparação devem usar viewport de altura convencional,
+nunca a altura do design.
 
 ## O que este repositório NÃO contém
 
