@@ -22,9 +22,10 @@ Template "Coffee Shop" do kit Preline UI, pareado com o projeto Figma correspond
 
 - O hero do codigo usa altura relativa a janela (`h-120 md:h-[80dvh]`), enquanto o
   design fixa o hero em 528px. Por construcao, os dois so coincidem numa janela de
-  660px de altura. Renderizado a 1728x1080, a pagina mede 4240px contra 4011px da
-  area de app do design (~5,7%, quase tudo no hero). Capturas com viewport igual a
-  altura do design inflam o hero (80% de 4011 = 3209px) e nao devem ser usadas.
+  660px de altura (0,8 x 660 = 528). Por isso a captura de referencia deve usar
+  viewport de 1728x660: ali o hero bate exato com o design e a pagina fica em ~3904px,
+  contra 4011px da area de app do design. Capturas com viewport igual a altura do
+  design inflam o hero (80% de 4011 = 3208,8px) e nao devem ser usadas.
 - A URL do Unsplash que aparece no HTML e apenas o nome da classe Tailwind (inerte);
   o CSS compilado em `reference/vendor/` ja aponta para a copia local da imagem.
   Render sem rede verificado: zero requisicoes externas.
