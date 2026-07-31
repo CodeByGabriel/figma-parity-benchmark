@@ -47,6 +47,9 @@ Estrutura-alvo por projeto: `reference` + **12 variantes** (6 categorias x 2
 severidades). O `ground_truth.toml` registra, por variante, a categoria que uma
 técnica deve acusar (`on_axis`) e o status esperado (`mismatch`, `missing`, ...).
 
+Estado atual: `dashboard` e `ai_chat` têm as 12 variantes; `cms`, `agency`,
+`personal` e `coffee_shop` têm 6 (só as `gross`), com as 6 `subtle` pendentes.
+
 Casos-limite documentados no gabarito:
 - mudança de espaçamento sem reestruturação (ex.: `gap-4 → gap-8`) conta como
   `alignment`, ainda que a variante se chame `layout_*`;
