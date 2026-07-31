@@ -2,8 +2,8 @@
 # Encodado a partir de notes/research/semana_07_20260525_a_20260531/variant_design.md §2.2.
 # Cada variante injeta drift em EXATAMENTE 1 categoria; `on_axis` = categoria(s) que
 # DEVEM virar `mismatch`. v0 (baseline) tem on_axis=[] → piso de falso-positivo.
-# `expected_status` documenta o status esperado do grupo afetado (recall/precisão medem
-# categorias de mismatch; `missing` não é categoria de mismatch; daí on_axis=[]).
+# `expected_status` documenta o status esperado do grupo afetado (`missing` não é uma
+# categoria de mismatch; por isso o grupo removido tem on_axis=[]).
 
 [v0]
 on_axis = []

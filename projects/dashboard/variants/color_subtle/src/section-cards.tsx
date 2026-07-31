@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/card"
 
 export function SectionCards() {
-  // color_subtle: from-primary/5 → from-emerald-500/5 (ΔE≈8-10 CIEDE2000 no token de gradiente de fundo dos KPI cards)
+  // color_subtle: from-primary/5 trocado por from-emerald-500/5 no token de gradiente de fundo dos KPI cards (mudança sutil de matiz)
   return (
     <div className="grid grid-cols-1 gap-4 px-4 *:data-[slot=card]:bg-gradient-to-t *:data-[slot=card]:from-emerald-500/5 *:data-[slot=card]:to-card *:data-[slot=card]:shadow-xs lg:px-6 @xl/main:grid-cols-2 @5xl/main:grid-cols-4 dark:*:data-[slot=card]:bg-card">
       <Card className="@container/card">
